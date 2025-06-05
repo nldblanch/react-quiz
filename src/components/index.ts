@@ -1,20 +1,27 @@
-import Error from "./ErrorComponent";
+import ErrorComponent from "./ErrorComponent";
 import Header from "./Header";
 import Loader from "./Loader";
 import OptionButton from "./Options";
 import QuestionDisplay from "./QuestionDisplay";
 import StartScreen from "./StartScreen";
 import MainLayout from "./MainLayout";
-import NextButton from "./NextButton";
+import ConditionalButton from "./ConditionalButton";
 import Progress from "./Progress";
+import Finished from "./Finished";
+import Footer from "./Footer";
+import Timer from "./Timer";
+
 export {
-  Error,
+  ErrorComponent,
   Header,
   Loader,
   OptionButton,
   QuestionDisplay,
   StartScreen,
   MainLayout,
-  NextButton,
+  ConditionalButton,
   Progress,
+  Finished,
+  Footer,
+  Timer,
 };

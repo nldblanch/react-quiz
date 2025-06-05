@@ -1,0 +1,347 @@
+{
+  "questions": [
+    {
+      "question": "Which is the most popular JavaScript framework?",
+      "options": ["Angular", "React", "Svelte", "Vue"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which company invented React?",
+      "options": ["Google", "Apple", "Netflix", "Facebook"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What's the fundamental building block of React apps?",
+      "options": ["Components", "Blocks", "Elements", "Effects"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What's the name of the syntax we use to describe the UI in React components?",
+      "options": ["FBJ", "Babel", "JSX", "ES2015"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How does data flow naturally in React apps?",
+      "options": [
+        "From parents to children",
+        "From children to parents",
+        "Both ways",
+        "The developers decides"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How to pass data into a child component?",
+      "options": ["State", "Props", "PropTypes", "Parameters"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "When to use derived state?",
+      "options": [
+        "Whenever the state should not trigger a re-render",
+        "Whenever the state can be synchronized with an effect",
+        "Whenever the state should be accessible to all components",
+        "Whenever the state can be computed from another state variable"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "What triggers a UI re-render in React?",
+      "options": [
+        "Running an effect",
+        "Passing props",
+        "Updating state",
+        "Adding event listeners to DOM elements"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "When do we directly \"touch\" the DOM in React?",
+      "options": [
+        "When we need to listen to an event",
+        "When we need to change the UI",
+        "When we need to add styles",
+        "Almost never"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "In what situation do we use a callback to update state?",
+      "options": [
+        "When updating the state will be slow",
+        "When the updated state is very data-intensive",
+        "When the state update should happen faster",
+        "When the new state depends on the previous state"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "If we pass a function to useState, when will that function be called?",
+      "options": [
+        "On each re-render",
+        "Each time we update the state",
+        "Only on the initial render",
+        "The first time we update the state"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "Which hook to use for an API request on the component's initial render?",
+      "options": ["useState", "useEffect", "useRef", "useReducer"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which variables should go into the useEffect dependency array?",
+      "options": [
+        "Usually none",
+        "All our state variables",
+        "All state and props referenced in the effect",
+        "All variables needed for clean up"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "An effect will always run on the initial render.",
+      "options": [
+        "True",
+        "It depends on the dependency array",
+        "False",
+        "In depends on the code in the effect"
+      ],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
+      "question": "When will an effect run if it doesn't have a dependency array?",
+      "options": [
+        "Only when the component mounts",
+        "Only when the component unmounts",
+        "The first time the component re-renders",
+        "Each time the component is re-rendered"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What is the purpose of the useEffect hook in React?",
+      "options": [
+        "To manage component state",
+        "To perform side effects in function components",
+        "To create new components",
+        "To handle user input"
+      ],
+      "correctOption": 1,
+      "points": 20,
+      "id": "r201"
+    },
+    {
+      "question": "Which of the following is NOT a valid React hook?",
+      "options": ["useState", "useEffect", "useFetch", "useContext"],
+      "correctOption": 2,
+      "points": 20,
+      "id": "r202"
+    },
+    {
+      "question": "What does JSX stand for?",
+      "options": [
+        "JavaScript XML",
+        "Java Syntax Extension",
+        "JavaScript Extension",
+        "JavaScript XAML"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "id": "r203"
+    },
+    {
+      "question": "What is the virtual DOM in React?",
+      "options": [
+        "A copy of the real DOM that React uses to optimize rendering",
+        "A browser API for faster rendering",
+        "A new HTML standard",
+        "A debugging tool"
+      ],
+      "correctOption": 0,
+      "points": 20,
+      "id": "r204"
+    },
+    {
+      "question": "Which method is used to update state in a class component?",
+      "options": ["this.setState", "useState", "setState()", "updateState"],
+      "correctOption": 0,
+      "points": 10,
+      "id": "r205"
+    },
+    {
+      "question": "What is the default behavior of useEffect with an empty dependency array?",
+      "options": [
+        "It runs on every render",
+        "It runs only once after the initial render",
+        "It never runs",
+        "It runs before the component mounts"
+      ],
+      "correctOption": 1,
+      "points": 30,
+      "id": "r206"
+    },
+    {
+      "question": "What is the main advantage of using keys in a list in React?",
+      "options": [
+        "They improve performance by helping React identify which items changed",
+        "They are required for all list items",
+        "They make the list sortable",
+        "They allow styling of list items"
+      ],
+      "correctOption": 0,
+      "points": 20,
+      "id": "r207"
+    },
+    {
+      "question": "Which hook would you use to access context in a functional component?",
+      "options": ["useContext", "useState", "useReducer", "useEffect"],
+      "correctOption": 0,
+      "points": 10,
+      "id": "r208"
+    },
+    {
+      "question": "What does React.memo do?",
+      "options": [
+        "It memoizes a function",
+        "It prevents unnecessary re-renders of a component",
+        "It creates a new component",
+        "It caches API responses"
+      ],
+      "correctOption": 1,
+      "points": 30,
+      "id": "r209"
+    },
+    {
+      "question": "What is the main purpose of the useState hook in React?",
+      "options": [
+        "To manage state in function components",
+        "To handle side effects",
+        "To create new components",
+        "To manage global state"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "id": "r210"
+    },
+    {
+      "question": "Which lifecycle method is used to fetch data in a class component?",
+      "options": [
+        "componentDidMount",
+        "componentWillMount",
+        "componentDidUpdate",
+        "componentWillUpdate"
+      ],
+      "correctOption": 0,
+      "points": 20,
+      "id": "r211"
+    },
+    {
+      "question": "What is the purpose of the useReducer hook in React?",
+      "options": [
+        "To manage complex state logic",
+        "To handle side effects",
+        "To create new components",
+        "To manage global state"
+      ],
+      "correctOption": 0,
+      "points": 30,
+      "id": "r212"
+    },
+    {
+      "question": "Which method is used to render a React component to the DOM?",
+      "options": [
+        "ReactDOM.render",
+        "React.render",
+        "ReactDOM.create",
+        "React.create"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "id": "r213"
+    },
+    {
+      "question": "What is the purpose of the useRef hook in React?",
+      "options": [
+        "To create a mutable reference",
+        "To manage state",
+        "To handle side effects",
+        "To create new components"
+      ],
+      "correctOption": 0,
+      "points": 20,
+      "id": "r214"
+    },
+    {
+      "question": "Which method is used to update state in a function component?",
+      "options": ["useState", "setState", "updateState", "this.setState"],
+      "correctOption": 0,
+      "points": 10,
+      "id": "r215"
+    },
+    {
+      "question": "What is the purpose of the useCallback hook in React?",
+      "options": [
+        "To memoize functions",
+        "To manage state",
+        "To handle side effects",
+        "To create new components"
+      ],
+      "correctOption": 0,
+      "points": 30,
+      "id": "r216"
+    },
+    {
+      "question": "Which method is used to create a new context in React?",
+      "options": [
+        "React.createContext",
+        "React.create",
+        "React.useContext",
+        "React.createElement"
+      ],
+      "correctOption": 0,
+      "points": 20,
+      "id": "r217"
+    },
+    {
+      "question": "What is the purpose of the useLayoutEffect hook in React?",
+      "options": [
+        "To perform side effects after DOM updates",
+        "To manage state",
+        "To create new components",
+        "To handle user input"
+      ],
+      "correctOption": 0,
+      "points": 30,
+      "id": "r218"
+    },
+    {
+      "question": "Which method is used to create a new element in React?",
+      "options": [
+        "React.createElement",
+        "React.create",
+        "ReactDOM.createElement",
+        "ReactDOM.create"
+      ],
+      "correctOption": 0,
+      "points": 10,
+      "id": "r219"
+    }
+  ]
+}

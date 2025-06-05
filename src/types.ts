@@ -11,6 +11,8 @@ export interface State {
   index: number;
   answer: null | number;
   points: number;
+  highscore: number;
+  secondsRemaining: number;
 }
 
 export type Action =
@@ -18,6 +20,9 @@ export type Action =
   | { type: "dataFailed" }
   | { type: "start" }
   | { type: "newAnswer"; payload: number }
-  | { type: "nextQuestion" };
+  | { type: "nextQuestion" }
+  | { type: "finish" }
+  | { type: "restart" }
+  | { type: "tick" };
 
 export type Dispatch = React.ActionDispatch<[action: Action]>;

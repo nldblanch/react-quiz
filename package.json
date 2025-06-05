@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "json-server data/questions.json --port 8000"
+    "server": "json-server public/questions.json --port 8000"
   },
   "dependencies": {
     "react": "^19.1.0",
