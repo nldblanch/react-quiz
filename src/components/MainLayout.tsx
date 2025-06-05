@@ -1,8 +1,8 @@
-type LayoutProps = {
+type Props = {
   children: React.ReactNode;
 };
 
-const MainLayout = ({ children }: LayoutProps) => {
+const MainLayout = ({ children }: Props) => {
   return <main className="main">{children}</main>;
 };
 
