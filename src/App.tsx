@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from "react";
+import { useEffect, useMemo, useReducer } from "react";
 
 import type { Question, State, Action } from "./types";
 import {
@@ -6,6 +6,7 @@ import {
   Loader,
   MainLayout,
   NextButton,
+  Progress,
   QuestionDisplay,
   StartScreen,
 } from "./components";
@@ -45,11 +46,15 @@ const reducer = (state: State, action: Action): State => {
 };
 
 function App() {
-  const [{ questions, status, index, answer }, dispatch] = useReducer(
+  const [{ questions, status, index, answer, points }, dispatch] = useReducer(
     reducer,
     initialState,
   );
   const numOfQuestions = questions.length;
+  const maxPossiblePoints = useMemo(
+    () => questions.reduce((prev, curr) => prev + curr.points, 0),
+    [questions],
+  );
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -78,6 +83,13 @@ function App() {
           )}
           {status === "active" && (
             <>
+              <Progress
+                index={index}
+                numOfQuestions={numOfQuestions}
+                points={points}
+                maxPossiblePoints={maxPossiblePoints}
+                answer={answer}
+              />
               <QuestionDisplay
                 question={questions[index]}
                 dispatch={dispatch}

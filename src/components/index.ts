@@ -6,7 +6,7 @@ import QuestionDisplay from "./QuestionDisplay";
 import StartScreen from "./StartScreen";
 import MainLayout from "./MainLayout";
 import NextButton from "./NextButton";
-
+import Progress from "./Progress";
 export {
   Error,
   Header,
@@ -16,4 +16,5 @@ export {
   StartScreen,
   MainLayout,
   NextButton,
+  Progress,
 };
