@@ -1,13 +1,9 @@
-import type { Dispatch, Question, State } from "../types";
+import { useQuiz } from "../contexts/QuizContext";
 import Options from "./Options";
 
-type Props = {
-  question: Question;
-  dispatch: Dispatch;
-  answer: State["answer"];
-};
-
-export default function QuestionDisplay({ question, dispatch, answer }: Props) {
+export default function QuestionDisplay() {
+  const { questions, index, dispatch, answer } = useQuiz();
+  const question = questions[index];
   return (
     <div>
       <h4>{question?.question}</h4>

@@ -5,7 +5,6 @@ import OptionButton from "./Options";
 import QuestionDisplay from "./QuestionDisplay";
 import StartScreen from "./StartScreen";
 import MainLayout from "./MainLayout";
-import ConditionalButton from "./ConditionalButton";
 import Progress from "./Progress";
 import Finished from "./Finished";
 import Footer from "./Footer";
@@ -19,7 +18,6 @@ export {
   QuestionDisplay,
   StartScreen,
   MainLayout,
-  ConditionalButton,
   Progress,
   Finished,
   Footer,

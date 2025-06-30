@@ -1,16 +1,7 @@
-import type { State } from "../types";
+import { useQuiz } from "../contexts/QuizContext";
 
-type Props = {
-  points: State["points"];
-  maxPossiblePoints: State["points"];
-  highscore: State["highscore"];
-};
-
-export default function Finished({
-  points,
-  maxPossiblePoints,
-  highscore,
-}: Props) {
+export default function Finished() {
+  const { points, maxPossiblePoints, highscore } = useQuiz();
   const percentage = (points / maxPossiblePoints) * 100;
   let emoji = "";
   if (percentage === 100) emoji = "🥇";
